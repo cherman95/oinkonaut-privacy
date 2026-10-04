@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Oinkonaut Privacy Policy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #FAFAF7;
+    --surface: #FFFFFF;
+    --text: #1B1B22;
+    --text-muted: #5B5B68;
+    --border: #E6E5E0;
+    --accent: #0E93A3;
+    --accent-soft: #E4F5F6;
+    --tag: #C23B7A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --bg: #100F16;
+      --surface: #18171F;
+      --text: #ECECF2;
+      --text-muted: #9C9AAC;
+      --border: #2B2A36;
+      --accent: #33D8E8;
+      --accent-soft: #16323A;
+      --tag: #FF67AC;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", system-ui, sans-serif;
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 6rem;
+  }
+  .eyebrow {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--tag);
+    margin: 0 0 0.9rem;
+  }
+  h1 {
+    font-family: "Sora", system-ui, sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.1rem, 5vw, 2.75rem);
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.6rem;
+    text-wrap: balance;
+  }
+  .sub {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    margin: 0 0 2.6rem;
+    max-width: 58ch;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1.4rem;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 0.9rem 0;
+    margin-bottom: 3rem;
+  }
+  .meta b { color: var(--text); font-weight: 500; }
+
+  nav.toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.1rem 1.3rem;
+    margin-bottom: 3.2rem;
+  }
+  nav.toc p {
+    margin: 0 0 0.6rem;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  nav.toc ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    columns: 2;
+    column-gap: 1.5rem;
+  }
+  nav.toc li { break-inside: avoid; margin-bottom: 0.35rem; }
+  nav.toc a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.92rem;
+  }
+  nav.toc a:hover { color: var(--accent); }
+
+  section { margin-bottom: 2.6rem; scroll-margin-top: 1.5rem; }
+  .num {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.82rem;
+    color: var(--accent);
+    letter-spacing: 0.04em;
+  }
+  h2 {
+    font-family: "Sora", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 1.32rem;
+    margin: 0.25rem 0 0.9rem;
+    letter-spacing: -0.005em;
+  }
+  p { margin: 0 0 0.9rem; max-width: 66ch; }
+  ul { margin: 0 0 0.9rem; padding-left: 1.2rem; max-width: 62ch; }
+  li { margin-bottom: 0.45rem; }
+  a { color: var(--accent); }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.4rem;
+    font-size: 0.92rem;
+  }
+  .table-wrap { overflow-x: auto; }
+  th, td {
+    text-align: left;
+    padding: 0.55rem 0.8rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    padding: 0.9rem 1.1rem;
+    font-size: 0.94rem;
+    margin: 0.9rem 0 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 1.6rem;
+    color: var(--text-muted);
+    font-size: 0.88rem;
+  }
+  footer a { color: var(--text-muted); text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Privacy Policy</p>
+  <h1>Oinkonaut</h1>
+  <p class="sub">What we collect, why, and who we share it with &mdash; for the Oinkonaut mobile app, published by Eureka Digital Labs (Pty) Ltd.</p>
+  <div class="meta">
+    <span>Effective date: <b>4 October 2026</b></span>
+    <span>Applies to: <b>Android app, package com.eurekadigilabs.oinkonaut</b></span>
+    <span>Contact: <b>info@eurekadigilabs.com</b></span>
+  </div>
+
+  <nav class="toc">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#overview">1. Overview</a></li>
+      <li><a href="#data-we-collect">2. Data we collect</a></li>
+      <li><a href="#third-parties">3. Third-party services</a></li>
+      <li><a href="#local-storage">4. What stays on your device</a></li>
+      <li><a href="#permissions">5. App permissions</a></li>
+      <li><a href="#children">6. Children's privacy</a></li>
+      <li><a href="#rights">7. Your privacy rights</a></li>
+      <li><a href="#changes">8. Changes to this policy</a></li>
+      <li><a href="#contact">9. Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="overview">
+    <span class="num">01</span>
+    <h2>Overview</h2>
+    <p>Oinkonaut is a single-player arcade game that works entirely offline. It has no account system, no advertising, no in-app purchases and no analytics, and it does not sell or share personal information.</p>
+  </section>
+
+  <section id="data-we-collect">
+    <span class="num">02</span>
+    <h2>Data we collect</h2>
+    <p>None. The app does not request internet access, so it cannot send any data from your device to us or to anyone else. Eureka Digital Labs (Pty) Ltd ("we", "us") does not collect, receive or store any personal information through the app.</p>
+  </section>
+
+  <section id="third-parties">
+    <span class="num">03</span>
+    <h2>Third-party services</h2>
+    <p>The app contains no third-party advertising, analytics or tracking services. Google Play, which you use to install and update the app, handles its own data under <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a>.</p>
+  </section>
+
+  <section id="local-storage">
+    <span class="num">04</span>
+    <h2>What stays on your device</h2>
+    <p>Your progress &mdash; best altitudes, the local leaderboard of your top runs, coins, unlocked skins and upgrades, achievements, daily streak and settings &mdash; is saved in the app's own storage on your device. It is never transmitted. Uninstalling the app deletes it.</p>
+  </section>
+
+  <section id="permissions">
+    <span class="num">05</span>
+    <h2>App permissions</h2>
+    <ul>
+      <li><b>Vibration</b> &mdash; for haptic feedback during play (can be turned off in the game's menu).</li>
+    </ul>
+    <p>The app may read the device's motion sensors for tilt controls (also switchable in the menu); this needs no permission and the readings never leave the game.</p>
+  </section>
+
+  <section id="children">
+    <span class="num">06</span>
+    <h2>Children's privacy</h2>
+    <p>The app collects no personal information from anyone, including children.</p>
+  </section>
+
+  <section id="rights">
+    <span class="num">07</span>
+    <h2>Your privacy rights</h2>
+    <p>Eureka Digital Labs (Pty) Ltd is responsible for this policy. Depending on where you live (including under the GDPR, the UK GDPR and South Africa's Protection of Personal Information Act), you may have rights to access, correct or delete personal information and to complain to your local data protection authority (in South Africa, the Information Regulator). Because the app collects nothing, we hold no personal information about you, but you are welcome to contact us with any question.</p>
+  </section>
+
+  <section id="changes">
+    <span class="num">08</span>
+    <h2>Changes to this policy</h2>
+    <p>If the app ever starts handling data differently (for example by adding advertising), we will update this policy and its effective date before that version is released.</p>
+  </section>
+
+  <section id="contact">
+    <span class="num">09</span>
+    <h2>Contact</h2>
+    <p>Questions about this policy? Email <a href="mailto:info@eurekadigilabs.com">info@eurekadigilabs.com</a>.</p>
+  </section>
+
+  <footer>
+    Oinkonaut &mdash; this page is the privacy policy referenced in the app's Google Play Store listing.
+  </footer>
+</div>
+</body>
+</html>
